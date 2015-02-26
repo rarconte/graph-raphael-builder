@@ -1,0 +1,13 @@
+{
+    "name": "simulador",
+    "description": "Simulador de Combustible",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "jquery": "2.1.1",
+        "bootstrap": "~3.1.1",
+        "raphael": "~2.1.0",
+        "graph-raphael": "~0.1.0",
+        "dropzone": "~4.0.1"
+    }
+}

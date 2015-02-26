@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Graph Raphael Viewer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/3.12.0/css/dropzone.css">
+
+    <link rel="stylesheet" href="assets/viewer.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+      <nav class="navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a id="repeat" href="#"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></a>
+              </li>
+              <li>
+                <a id="fullscreen" href="#"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+              </li>
+              <li>
+                <a id="open" href="#"><span class="glyphicon glyphicon-open" aria-hidden="true"></span></a>
+              </li>
+              <li>
+                <input id="background-color" type="color" value="#FFFFFF" class="btn">
+                <span class="glyphicon glyphicon-download-tint" aria-hidden="true"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="canvas">
+        <form action="/upload" class="dropzone" style="height:100%">
+          <div class="fallback">
+            <input name="file" type="file"/>
+          </div>
+        </form>
+      </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/3.12.0/dropzone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+    <script src="static/graph-raphael.js"></script>
+
+    <script src="assets/viewer.js"></script>
+    
+</body>
+</html>
+
