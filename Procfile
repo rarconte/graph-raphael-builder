@@ -1,1 +1,1 @@
-web: http-server app
+web: node_modules/.bin/http-server app
